@@ -1,0 +1,560 @@
+ID;Name;Likelihood Of Attack;Related Weaknesses
+1;Accessing Functionality Not Properly Constrained by ACLs;High;::276::285::434::693::732::1191::1193::1220::1297::1311::1314::1315::1318::1320::1321::1327::
+2;Inducing Account Lockout;High;::645::
+3;Using Leading 'Ghost' Character Sequences to Bypass Input Filters;Medium;::173::41::172::179::180::181::183::184::20::74::697::707::
+4;Using Alternative IP Address Encodings;Medium;::291::173::
+5;Blue Boxing;Medium;::285::
+6;Argument Injection;High;::74::146::184::78::185::697::
+7;Blind SQL Injection;High;::89::209::74::20::697::707::
+8;Buffer Overflow in an API Call;High;::120::119::118::74::20::680::733::697::
+9;Buffer Overflow in Local Command-Line Utilities;High;::120::118::119::74::20::680::733::697::
+10;Buffer Overflow via Environment Variables;High;::120::302::118::119::74::99::20::680::733::697::
+11;Cause Web Server Misclassification;Medium;::430::
+12;Choosing Message Identifier;High;::201::306::
+13;Subverting Environment Variable Values;High;::353::285::302::74::15::73::20::200::
+14;Client-side Injection-induced Buffer Overflow;Medium;::120::353::118::119::74::20::680::697::
+15;Command Delimiters;High;::146::77::184::78::185::93::140::157::138::154::697::
+16;Dictionary-based Password Attack;Medium;::521::262::263::654::307::308::309::
+17;Using Malicious Files;High;::732::285::272::59::282::270::693::
+18;XSS Targeting Non-Script Elements;High;::80::
+19;Embedding Scripts within Scripts;High;::284::
+20;Encryption Brute Forcing;Low;::326::327::693::1204::
+21;Exploitation of Trusted Identifiers;High;::290::302::346::539::6::384::664::602::642::
+22;Exploiting Trust in Client;High;::290::287::20::200::693::
+23;File Content Injection;High;::20::
+24;Filter Failure through Buffer Overflow;High;::120::119::118::74::20::680::733::697::
+25;Forced Deadlock;Low;::412::567::662::667::833::1322::
+26;Leveraging Race Conditions;High;::368::363::366::370::362::662::689::667::665::1223::1254::1298::
+27;Leveraging Race Conditions via Symbolic Links;Medium;::367::61::662::689::667::
+28;Fuzzing;High;::74::20::
+29;Leveraging Time-of-Check and Time-of-Use (TOCTOU) Race Conditions;High;::367::368::366::370::362::662::691::663::665::
+30;Hijacking a Privileged Thread of Execution;Low;::270::
+31;Accessing/Intercepting/Modifying HTTP Cookies;High;::565::302::311::113::539::20::315::384::472::602::642::
+32;XSS Through HTTP Query Strings;High;::80::
+33;HTTP Request Smuggling;Medium;::444::
+34;HTTP Response Splitting;Medium;::74::113::138::436::
+35;Leverage Executable Code in Non-Executable Files;High;::94::96::95::97::272::59::282::270::
+36;Using Unpublished Interfaces or Functionality;Medium;::306::693::695::1242::
+37;Retrieve Embedded Sensitive Data;High;::226::311::525::312::314::315::318::1239::1258::1266::1272::1278::1301::1330::
+38;Leveraging/Manipulating Configuration File Search Paths;High;::426::427::
+39;Manipulating Opaque Client-based Data Tokens;High;::353::285::302::472::565::315::539::384::233::
+40;Manipulating Writeable Terminal Devices;High;::77::
+41;Using Meta-characters in E-mail Headers to Inject Malicious Payloads;High;::150::88::697::
+42;MIME Conversion;High;::120::119::74::20::
+43;Exploiting Multiple Input Interpretation Layers;Medium;::179::181::184::183::77::78::74::20::697::707::
+44;Overflow Binary Resource File;High;::120::119::697::
+45;Buffer Overflow via Symbolic Links;High;::120::285::302::118::119::74::20::680::697::
+46;Overflow Variables and Tags;High;::120::118::119::74::20::680::733::697::
+47;Buffer Overflow via Parameter Expansion;Medium;::120::119::118::130::131::74::20::680::697::
+48;Passing Local Filenames to Functions That Expect a URL;High;::241::706::
+49;Password Brute Forcing;Medium;::521::262::263::257::654::307::308::309::
+50;Password Recovery Exploitation;Medium;::522::640::
+51;Poison Web Service Registry;High;::285::74::693::
+52;Embedding NULL Bytes;High;::158::172::173::74::20::697::707::
+53;Postfix, Null Terminate, and Backslash;High;::158::172::173::74::20::697::707::
+54;Query System for Information;High;::209::
+55;Rainbow Table Password Cracking;Medium;::261::521::262::263::654::916::308::309::
+57;Utilizing REST's Trust in the System Resource to Obtain Sensitive Data;Medium;::300::287::693::
+58;Restful Privilege Elevation;High;::267::269::
+59;Session Credential Falsification through Prediction;High;::290::330::331::346::488::539::200::6::285::384::693::
+60;Reusing Session IDs (aka Session Replay);High;::294::290::346::384::488::539::200::285::664::732::
+61;Session Fixation;Medium;::384::664::732::
+62;Cross Site Request Forgery;High;::352::306::664::732::1275::
+63;Cross-Site Scripting (XSS);High;::79::20::
+64;Using Slashes and URL Encoding Combined to Bypass Validation Logic;High;::177::173::172::73::22::74::20::697::707::
+65;Sniff Application Code;Low;::319::311::318::693::
+66;SQL Injection;High;::89::1286::
+67;String Format Overflow in syslog();High;::120::134::74::20::680::697::
+68;Subvert Code-signing Facilities;Low;::325::328::1326::
+69;Target Programs with Elevated Privileges;High;::250::15::
+70;Try Common or Default Usernames and Passwords;Medium;::521::262::263::798::654::308::309::
+71;Using Unicode Encoding to Bypass Validation Logic;Medium;::176::179::180::173::172::184::183::74::20::697::692::
+72;URL Encoding;High;::173::177::172::73::74::20::
+73;User-Controlled Filename;High;::20::184::96::348::116::350::86::697::
+74;Manipulating State;Medium;::372::315::353::693::1245::1253::1265::1271::
+75;Manipulating Writeable Configuration Files;High;::349::99::77::346::353::354::
+76;Manipulating Web Input to File System Calls;High;::23::22::73::77::346::348::285::272::59::74::15::
+77;Manipulating User-Controlled Variables;High;::15::94::96::285::302::473::1321::
+78;Using Escaped Slashes in Alternate Encoding;High;::180::181::173::172::73::22::74::20::697::707::
+79;Using Slashes in Alternate Encoding;High;::173::180::181::20::74::73::22::185::200::697::707::
+80;Using UTF-8 Encoding to Bypass Validation Logic;High;::173::172::180::181::73::74::20::697::692::
+81;Web Server Logs Tampering;Medium;::117::93::75::221::96::20::150::276::279::116::
+83;XPath Injection;High;::91::74::20::707::
+84;XQuery Injection;High;::74::707::
+85;AJAX Footprinting;High;::79::113::348::96::20::116::184::86::692::
+86;XSS Through HTTP Headers;High;::80::
+87;Forceful Browsing;High;::425::285::693::
+88;OS Command Injection;High;::78::88::20::697::
+89;Pharming;High;::346::350::
+90;Reflection Attack in Authentication Protocol;High;::301::303::
+92;Forced Integer Overflow;High;::190::128::120::122::196::680::697::
+93;Log Injection-Tampering-Forging;High;::117::75::150::
+94;Adversary in the Middle (AiTM);High;::300::290::593::287::294::
+95;WSDL Scanning;High;::538::
+96;Block Access to Libraries;Medium;::589::
+97;Cryptanalysis;Low;::327::1204::1240::1241::1279::
+98;Phishing;High;::451::
+100;Overflow Buffers;High;::120::119::131::129::805::680::
+101;Server Side Include (SSI) Injection;High;::97::74::20::
+102;Session Sidejacking;High;::294::522::523::319::614::
+103;Clickjacking;Medium;::1021::
+104;Cross Zone Scripting;Medium;::250::638::285::116::20::
+105;HTTP Request Splitting;Medium;::74::113::138::436::
+107;Cross Site Tracing;Medium;::693::648::
+108;Command Line Execution through SQL Injection;Low;::89::74::20::78::114::
+109;Object Relational Mapping Injection;Low;::20::89::564::
+110;SQL Injection through SOAP Parameter Tampering;High;::89::20::
+111;JSON Hijacking (aka JavaScript Hijacking);High;::345::346::352::
+112;Brute Force;;::330::326::521::
+113;Interface Manipulation;Medium;::1192::
+114;Authentication Abuse;;::287::1244::
+115;Authentication Bypass;;::287::
+116;Excavation;High;::200::1243::
+117;Interception;Low;::319::
+120;Double Encoding;Low;::173::172::177::181::183::184::74::20::697::692::
+121;Exploit Non-Production Interfaces;Low;::489::1209::1259::1267::1270::1294::1295::1296::1302::1313::
+122;Privilege Abuse;High;::269::732::1317::
+123;Buffer Manipulation;High;::119::
+124;Shared Resource Manipulation;;::1189::1331::
+125;Flooding;High;::404::770::
+126;Path Traversal;High;::22::
+127;Directory Indexing;High;::424::425::288::285::732::276::693::
+128;Integer Attacks;;::682::
+129;Pointer Manipulation;;::682::822::823::
+130;Excessive Allocation;Medium;::404::770::1325::
+131;Resource Leak Exposure;Medium;::404::
+132;Symlink Attack;Low;::59::
+133;Try All Common Switches;;::912::
+134;Email Injection;;::150::
+135;Format String Injection;High;::134::20::74::
+136;LDAP Injection;High;::77::90::20::
+137;Parameter Injection;Medium;::88::
+138;Reflection Injection;;::470::
+139;Relative Path Traversal;High;::23::
+140;Bypassing of Intermediate Forms in Multiple-Form Sets;;::372::
+141;Cache Poisoning;High;::348::345::349::346::
+142;DNS Cache Poisoning;High;::348::345::349::346::350::
+143;Detect Unpublicized Web Pages;;::425::
+144;Detect Unpublicized Web Services;;::425::
+145;Checksum Spoofing;;::354::
+146;XML Schema Poisoning;Low;::15::472::
+147;XML Ping of the Death;Low;::400::770::
+148;Content Spoofing;Medium;::345::
+149;Explore for Predictable Temporary File Names;;::377::
+150;Collect Data from Common Resource Locations;;::552::1239::1258::1266::1272::1323::1330::
+151;Identity Spoofing;Medium;::287::
+153;Input Data Manipulation;;::20::
+154;Resource Location Spoofing;Medium;::451::
+155;Screen Temporary Files for Sensitive Information;Medium;::377::
+157;Sniffing Attacks;;::311::
+158;Sniffing Network Traffic;;::311::
+159;Redirect Access to Libraries;High;::706::
+160;Exploit Script-Based APIs;;::346::
+161;Infrastructure Manipulation;;::923::
+162;Manipulating Hidden Fields;;::602::
+163;Spear Phishing;High;::451::
+164;Mobile Phishing;High;::451::
+165;File Manipulation;;
+166;Force the System to Reset Values;;::306::1221::1232::
+167;White Box Reverse Engineering;;::1323::
+168;Windows ::DATA Alternate Data Stream;;::212::69::
+169;Footprinting;High;::200::
+170;Web Application Fingerprinting;High;::497::
+173;Action Spoofing;High;::451::
+174;Flash Parameter Injection;High;::88::
+175;Code Inclusion;Medium;::829::
+176;Configuration/Environment Manipulation;;::15::1233::1234::1304::1328::
+177;Create files with the same name as files protected with a higher classification;;::706::
+178;Cross-Site Flashing;Medium;::601::
+179;Calling Micro-Services Directly;;
+180;Exploiting Incorrectly Configured Access Control Security Levels;High;::732::1190::1191::1193::1220::1268::1280::1297::1311::1315::1318::1320::1321::
+181;Flash File Overlay;;::1021::
+182;Flash Injection;High;::20::184::697::
+183;IMAP/SMTP Command Injection;;::77::
+184;Software Integrity Attack;;::494::
+185;Malicious Software Download;;::494::
+186;Malicious Software Update;;::494::
+187;Malicious Automated Software Update via Redirection;High;::494::
+188;Reverse Engineering;Low;::1278::
+189;Black Box Reverse Engineering;;::203::1255::1300::
+190;Reverse Engineer an Executable to Expose Assumed Hidden Functionality;;::912::
+191;Read Sensitive Constants Within an Executable;;::798::
+192;Protocol Analysis;Low;::326::
+193;PHP Remote File Inclusion;High;::98::80::
+194;Fake the Source of Data;;::287::
+195;Principal Spoof;;
+196;Session Credential Falsification through Forging;Medium;::384::664::
+197;Exponential Data Expansion;High;::770::776::
+198;XSS Targeting Error Pages;;::81::
+199;XSS Using Alternate Syntax;High;::87::
+200;Removal of filters: Input filters, output filters, data masking;;
+201;Serialized Data External Linking;High;::829::
+202;Create Malicious Client;;::602::
+203;Manipulate Registry Information;;::15::
+204;Lifting Sensitive Data Embedded in Cache;;::524::311::1239::1258::
+206;Signing Malicious Code;;::732::
+207;Removing Important Client Functionality;Medium;::602::
+208;Removing/short-circuiting 'Purse' logic: removing/mutating 'cash' decrements;;::602::
+209;XSS Using MIME Type Mismatch;;::79::20::646::
+212;Functionality Misuse;Medium;::1242::1246::1281::
+215;Fuzzing for application mapping;High;::209::532::
+216;Communication Channel Manipulation;;::306::
+217;Exploiting Incorrectly Configured SSL/TLS;Low;::201::
+218;Spoofing of UDDI/ebXML Messages;;::345::
+219;XML Routing Detour Attacks;High;::441::610::
+220;Client-Server Protocol Manipulation;;::757::
+221;Data Serialization External Entities Blowup;;::611::
+222;iFrame Overlay;Medium;::1021::
+224;Fingerprinting;High;::200::
+226;Session Credential Falsification through Manipulation;;::565::472::
+227;Sustained Client Engagement;;::400::
+228;DTD Injection;;::829::
+229;Serialized Data Parameter Blowup;High;::770::
+230;Serialized Data with Nested Payloads;Medium;::112::20::674::770::
+231;Oversized Serialized Data Payloads;Medium;::112::20::674::770::
+233;Privilege Escalation;;::269::1264::1311::
+234;Hijacking a privileged process;;::732::648::
+237;Escaping a Sandbox by Calling Code in Another Language;Low;::693::
+240;Resource Injection;High;::99::
+242;Code Injection;High;::94::
+243;XSS Targeting HTML Attributes;;::83::
+244;XSS Targeting URI Placeholders;High;::83::
+245;XSS Using Doubled Characters;;::85::
+247;XSS Using Invalid Characters;;::86::
+248;Command Injection;Medium;::77::
+250;XML Injection;High;::91::74::20::707::
+251;Local Code Inclusion;;::829::
+252;PHP Local File Inclusion;;::829::
+253;Remote Code Inclusion;;::829::
+256;SOAP Array Overflow;;::805::
+261;Fuzzing for garnering other adjacent user/sensitive data;;::20::
+263;Force Use of Corrupted Files;;::829::
+267;Leverage Alternate Encoding;High;::173::172::180::181::73::74::20::697::692::
+268;Audit Log Manipulation;;::117::
+270;Modification of Registry Run Keys;Medium;::15::
+271;Schema Poisoning;Low;::15::
+272;Protocol Manipulation;;
+273;HTTP Response Smuggling;Medium;::74::436::444::
+274;HTTP Verb Tampering;;::302::654::
+275;DNS Rebinding;High;::350::
+276;Inter-component Protocol Manipulation;;::707::
+277;Data Interchange Protocol Manipulation;;::707::
+278;Web Services Protocol Manipulation;;::707::
+279;SOAP Manipulation;Medium;::707::
+285;ICMP Echo Request Ping;Medium;::200::
+287;TCP SYN Scan;;::200::
+290;Enumerate Mail Exchange (MX) Records;;::200::
+291;DNS Zone Transfers;;::200::
+292;Host Discovery;;::200::
+293;Traceroute Route Enumeration;;::200::
+294;ICMP Address Mask Request;;::200::
+295;Timestamp Request;;::200::
+296;ICMP Information Request;;::200::
+297;TCP ACK Ping;;::200::
+298;UDP Ping;;::200::
+299;TCP SYN Ping;;::200::
+300;Port Scanning;;::200::
+301;TCP Connect Scan;;::200::
+302;TCP FIN Scan;;::200::
+303;TCP Xmas Scan;;::200::
+304;TCP Null Scan;;::200::
+305;TCP ACK Scan;;::200::
+306;TCP Window Scan;;::200::
+307;TCP RPC Scan;;::200::
+308;UDP Scan;;::200::
+309;Network Topology Mapping;;::200::
+310;Scanning for Vulnerable Software;;::200::
+312;Active OS Fingerprinting;Medium;::200::
+313;Passive OS Fingerprinting;High;::200::
+317;IP ID Sequencing Probe;Medium;::200::
+318;IP 'ID' Echoed Byte-Order Probe;Medium;::200::
+319;IP (DF) 'Don't Fragment Bit' Echoing Probe;Medium;::200::
+320;TCP Timestamp Probe;Medium;::200::
+321;TCP Sequence Number Probe;Medium;::200::
+322;TCP (ISN) Greatest Common Divisor Probe;Medium;::200::
+323;TCP (ISN) Counter Rate Probe;Medium;::200::
+324;TCP (ISN) Sequence Predictability Probe;Medium;::200::
+325;TCP Congestion Control Flag (ECN) Probe;Medium;::200::
+326;TCP Initial Window Size Probe;Medium;::200::
+327;TCP Options Probe;Medium;::200::
+328;TCP 'RST' Flag Checksum Probe;Medium;::200::
+329;ICMP Error Message Quoting Probe;Medium;::200::
+330;ICMP Error Message Echoing Integrity Probe;Medium;::200::
+331;ICMP IP Total Length Field Probe;Medium;::204::
+332;ICMP IP 'ID' Field Error Message Probe;Medium;::204::
+383;Harvesting Information via API Event Monitoring;;::311::319::419::602::
+384;Application API Message Manipulation via Man-in-the-Middle;;::471::345::346::602::311::
+385;Transaction or Event Tampering via Application API Manipulation;;::471::345::346::602::311::
+386;Application API Navigation Remapping;;::471::345::346::602::311::
+387;Navigation Remapping To Propagate Malicious Content;;::471::345::346::602::311::
+388;Application API Button Hijacking;;::471::345::346::602::311::
+389;Content Spoofing Via Application API Manipulation;;::353::
+390;Bypassing Physical Security;;
+391;Bypassing Physical Locks;;
+392;Lock Bumping;;
+393;Lock Picking;;
+394;Using a Snap Gun Lock to Force a Lock;;
+395;Bypassing Electronic Locks and Access Controls;;
+397;Cloning Magnetic Strip Cards;;
+398;Magnetic Strip Card Brute Force Attacks;;
+399;Cloning RFID Cards or Chips;;
+400;RFID Chip Deactivation or Destruction;;
+401;Physically Hacking Hardware;Low;::1263::
+402;Bypassing ATA Password Security;;::285::
+406;Dumpster Diving;;
+407;Pretexting;Medium;
+410;Information Elicitation;;
+412;Pretexting via Customer Service;;
+413;Pretexting via Tech Support;;
+414;Pretexting via Delivery Person;;
+415;Pretexting via Phone;;
+416;Manipulate Human Behavior;Medium;
+417;Influence Perception;High;
+418;Influence Perception of Reciprocation;Medium;
+420;Influence Perception of Scarcity;High;
+421;Influence Perception of Authority;High;
+422;Influence Perception of Commitment and Consistency;High;
+423;Influence Perception of Liking;Medium;
+424;Influence Perception of Consensus or Social Proof;Low;
+425;Target Influence via Framing;Low;
+426;Influence via Incentives;Low;
+427;Influence via Psychological Principles;Low;
+428;Influence via Modes of Thinking;;
+429;Target Influence via Eye Cues;;
+433;Target Influence via The Human Buffer Overflow;;
+434;Target Influence via Interview and Interrogation;;
+435;Target Influence via Instant Rapport;;
+438;Modification During Manufacture;;
+439;Manipulation During Distribution;;::1269::
+440;Hardware Integrity Attack;Low;
+441;Malicious Logic Insertion;Medium;::284::
+442;Infected Software;Medium;::506::
+443;Malicious Logic Inserted Into Product by Authorized Developer;Medium;
+444;Development Alteration;Medium;
+445;Malicious Logic Insertion into Product Software via Configuration Management Manipulation;Medium;
+446;Malicious Logic Insertion into Product via Inclusion of Third-Party Component;Medium;
+447;Design Alteration;Medium;
+448;Embed Virus into DLL;Medium;::506::
+452;Infected Hardware;Medium;
+456;Infected Memory;Medium;::1257::1260::1274::1312::1316::
+457;USB Memory Attacks;Low;::1299::
+458;Flash Memory Attacks;;::1282::
+459;Creating a Rogue Certification Authority Certificate;Medium;::327::295::290::
+460;HTTP Parameter Pollution (HPP);;::88::147::235::
+461;Web Services API Signature Forgery Leveraging Hash Function Extension Weakness;;::328::290::
+462;Cross-Domain Search Timing;;::385::352::208::
+463;Padding Oracle Crypto Attack;;::209::514::649::347::354::696::
+464;Evercookie;;::359::
+465;Transparent Proxy Abuse;;::441::
+466;Leveraging Active Adversary in the Middle Attacks to Bypass Same Origin Policy;;::300::
+467;Cross Site Identification;;::352::359::
+468;Generic Cross-Browser Cross-Domain Theft;;::707::149::177::838::
+469;HTTP DoS;;::770::772::
+470;Expanding Control over the Operating System from the Database;;::250::89::
+471;Search Order Hijacking;;::427::
+472;Browser Fingerprinting;;::200::
+473;Signature Spoof;;::20::327::290::
+474;Signature Spoofing by Key Theft;Medium;::522::
+475;Signature Spoofing by Improper Validation;Low;::347::327::295::
+476;Signature Spoofing by Misrepresentation;Low;::290::
+477;Signature Spoofing by Mixing Signed and Unsigned Content;Low;::693::311::319::
+478;Modification of Windows Service Configuration;Low;::284::
+479;Malicious Root Certificate;Low;::284::
+480;Escaping Virtualization;Low;::693::
+481;Contradictory Destinations in Traffic Routing Schemes;Medium;::923::
+482;TCP Flood;;::770::
+485;Signature Spoofing by Key Recreation;Low;::330::
+486;UDP Flood;;::770::
+487;ICMP Flood;;::770::
+488;HTTP Flood;;::770::
+489;SSL Flood;;::770::
+490;Amplification;;::770::
+491;Quadratic Data Expansion;;::770::
+492;Regular Expression Exponential Blowup;;::400::1333::
+493;SOAP Array Blowup;;::770::
+494;TCP Fragmentation;;::770::404::
+495;UDP Fragmentation;;::770::404::
+496;ICMP Fragmentation;;::770::404::
+497;File Discovery;High;::200::
+498;Probe iOS Screenshots;;::359::
+499;Android Intent Intercept;;::925::
+500;WebView Injection;;::749::940::
+501;Android Activity Hijack;;::923::
+502;Intent Spoof;;::284::
+503;WebView Exposure;;::284::
+504;Task Impersonation;Medium;::1021::
+505;Scheme Squatting;;
+506;Tapjacking;Low;::1021::
+507;Physical Theft;;
+508;Shoulder Surfing;High;::200::359::
+509;Kerberoasting;;::522::308::309::294::263::262::521::
+510;SaaS User Request Forgery;High;::346::
+511;Infiltration of Software Development Environment;Low;
+516;Hardware Component Substitution During Baselining;Low;
+517;Documentation Alteration to Circumvent Dial-down;Low;
+518;Documentation Alteration to Produce Under-performing Systems;Low;
+519;Documentation Alteration to Cause Errors in System Design;Low;
+520;Counterfeit Hardware Component Inserted During Product Assembly;Low;
+521;Hardware Design Specifications Are Altered;Low;
+522;Malicious Hardware Component Replacement;Low;
+523;Malicious Software Implanted;Low;
+524;Rogue Integration Procedures;Low;
+528;XML Flood;Low;::770::
+529;Malware-Directed Internal Reconnaissance;Medium;
+530;Provide Counterfeit Component;Low;
+531;Hardware Component Substitution;Low;
+532;Altered Installed BIOS;Low;
+533;Malicious Manual Software Update;Low;::494::
+534;Malicious Hardware Update;Low;
+535;Malicious Gray Market Hardware;Low;
+536;Data Injected During Configuration;Low;::284::
+537;Infiltration of Hardware Development Environment;Low;
+538;Open-Source Library Manipulation;Low;::494::829::
+539;ASIC With Malicious Functionality;Low;
+540;Overread Buffers;Low;::125::
+541;Application Fingerprinting;;::204::205::208::
+542;Targeted Malware;;
+543;Counterfeit Websites;;
+544;Counterfeit Organizations;;
+545;Pull Data from System Resources;;::1239::1243::1258::1266::1272::1278::1323::1258::1330::
+546;Incomplete Data Deletion in a Multi-Tenant Environment;Low;::284::1266::1272::
+547;Physical Destruction of Device or Component;;
+548;Contaminate Resource;Low;
+549;Local Execution of Code;Medium;::829::
+550;Install New Service;;::284::
+551;Modify Existing Service;;::284::522::
+552;Install Rootkit;Medium;::284::
+554;Functionality Bypass;Medium;::424::1299::
+555;Remote Services with Stolen Credentials;;::522::308::309::294::263::262::521::
+556;Replace File Extension Handlers;;::284::
+558;Replace Trusted Executable;Low;::284::
+559;Orbital Jamming;Low;
+560;Use of Known Domain Credentials;High;::522::307::308::309::262::263::654::1273::
+561;Windows Admin Shares with Stolen Credentials;;::522::308::309::294::263::262::521::
+562;Modify Shared File;;::284::
+563;Add Malicious File to Shared Webroot;;::284::
+564;Run Software at Logon;;::284::
+565;Password Spraying;High;::521::262::263::654::307::308::309::
+568;Capture Credentials via Keylogger;;
+569;Collect Data as Provided by Users;;
+571;Block Logging to Central Repository;;
+572;Artificially Inflate File Sizes;High;
+573;Process Footprinting;Low;::200::
+574;Services Footprinting;Low;::200::
+575;Account Footprinting;Low;::200::
+576;Group Permission Footprinting;Low;::200::
+577;Owner Footprinting;Low;::200::
+578;Disable Security Software;Medium;::284::
+579;Replace Winlogon Helper DLL;;::15::
+580;System Footprinting;Low;::204::205::208::
+581;Security Software Footprinting;;
+582;Route Disabling;Low;
+583;Disabling Network Hardware;;
+584;BGP Route Disabling;;
+585;DNS Domain Seizure;;
+586;Object Injection;Medium;::502::
+587;Cross Frame Scripting (XFS);;::1021::
+588;DOM-Based XSS;High;::79::20::83::
+589;DNS Blocking;;::300::
+590;IP Address Blocking;Low;::300::
+591;Reflected XSS;High;::79::
+592;Stored XSS;High;::79::
+593;Session Hijacking;High;::287::
+594;Traffic Injection;;::940::
+595;Connection Reset;;::940::
+596;TCP RST Injection;;::940::
+597;Absolute Path Traversal;;::36::
+598;DNS Spoofing;;
+599;Terrestrial Jamming;Low;
+600;Credential Stuffing;High;::522::307::308::309::262::263::654::
+601;Jamming;Medium;
+603;Blockage;Medium;
+604;Wi-Fi Jamming;Medium;
+605;Cellular Jamming;;
+606;Weakening of Cellular Encryption;;::757::
+607;Obstruction;;
+608;Cryptanalysis of Cellular Encryption;;::327::
+609;Cellular Traffic Intercept;;::311::
+610;Cellular Data Injection;;
+611;BitSquatting;Low;
+612;WiFi MAC Address Tracking;;::201::300::
+613;WiFi SSID Tracking;;::201::300::
+614;Rooting SIM Cards;;::327::
+615;Evil Twin Wi-Fi Attack;;::300::
+616;Establish Rogue Location;Medium;::200::
+617;Cellular Rogue Base Station;;
+618;Cellular Broadcast Message Request;;::201::
+619;Signal Strength Tracking;;::201::
+620;Drop Encryption Level;;::757::
+621;Analysis of Packet Timing and Sizes;;::201::
+622;Electromagnetic Side-Channel Attack;;::201::
+623;Compromising Emanations Attack;;::201::
+624;Hardware Fault Injection;Low;::1247::1248::1256::1319::1332::1334::1338::1351::
+625;Mobile Device Fault Injection;;::1247::1248::1256::1319::1332::1334::1338::1351::
+626;Smudge Attack;;
+627;Counterfeit GPS Signals;Low;
+628;Carry-Off GPS Attack;Low;
+630;TypoSquatting;Low;
+631;SoundSquatting;Low;
+632;Homograph Attack via Homoglyphs;Low;::1007::
+633;Token Impersonation;;::287::1270::
+634;Probe Audio and Video Peripherals;Low;::267::
+635;Alternative Execution Due to Deceptive Filenames;;::162::
+636;Hiding Malicious Data or Code within Files;;::506::
+637;Collect Data from Clipboard;Low;::267::
+638;Altered Component Firmware;Low;
+639;Probe System Files;;::552::
+640;Inclusion of Code in Existing Process;Low;::114::829::
+641;DLL Side-Loading;Low;::706::
+642;Replace Binaries;;::732::
+643;Identify Shared Files/Directories on System;Medium;::267::200::
+644;Use of Captured Hashes (Pass The Hash);Medium;::522::836::308::294::308::
+645;Use of Captured Tickets (Pass The Ticket);Low;::522::294::308::
+646;Peripheral Footprinting;Low;::200::
+647;Collect Data from Registries;Medium;::285::
+648;Collect Data from Screen Capture;Medium;::267::
+649;Adding a Space to a File Extension;Low;::46::
+650;Upload a Web Shell to a Web Server;;::287::553::
+651;Eavesdropping;;::200::
+652;Use of Known Kerberos Credentials;Medium;::522::307::308::309::262::263::654::294::836::
+653;Use of Known Operating System Credentials;High;::522::307::308::309::262::263::654::
+654;Credential Prompt Impersonation;Medium;::1021::
+655;Avoid Security Tool Identification by Adding Data;High;
+656;Voice Phishing;High;
+657;Malicious Automated Software Update via Spoofing;High;::494::
+660;Root/Jailbreak Detection Evasion via Hooking;Medium;::829::
+661;Root/Jailbreak Detection Evasion via Debugging;Medium;::489::
+662;Adversary in the Browser (AiTB);High;::300::494::
+663;Exploitation of Transient Instruction Execution;Low;::1037::1303::1264::
+664;Server Side Request Forgery;High;::918::20::
+665;Exploitation of Thunderbolt Protection Flaws;Low;::345::353::288::1188::862::
+666;BlueSmacking;Medium;::404::
+667;Bluetooth Impersonation AttackS (BIAS);Medium;::290::
+668;Key Negotiation of Bluetooth Attack (KNOB);Low;::425::285::693::
+669;Alteration of a Software Update;Medium;
+670;Software Development Tools Maliciously Altered;Low;
+671;Requirements for ASIC Functionality Maliciously Altered;Low;
+672;Malicious Code Implanted During Chip Programming;Low;
+673;Developer Signing Maliciously Altered Software;Medium;
+674;Design for FPGA Maliciously Altered;Low;
+675;Retrieve Data from Decommissioned Devices;Medium;::1266::
+676;NoSQL Injection;High;::943::1286::
+677;Server Motherboard Compromise;Low;
+678;System Build Data Maliciously Altered;Low;
+679;Exploitation of Improperly Configured or Implemented Memory Protections;Medium;::1222::1252::1257::1260::1274::1282::1312::1316::1326::
+680;Exploitation of Improperly Controlled Registers;Medium;::1224::1231::1233::1262::1283::
+681;Exploitation of Improperly Controlled Hardware Security Identifiers;Medium;::1259::1267::1270::1294::1302::
+682;Exploitation of Firmware or ROM Code with Unpatchable Vulnerabilities;Medium;::1277::1310::
+690;Metadata Spoofing;Medium;
+691;Spoof Open-Source Software Metadata;Medium;::494::
+692;Spoof Version Control System Commit Metadata;Medium;::494::
+693;StarJacking;Medium;::494::
+694;System Location Discovery;High;::497::
+695;Repo Jacking;Medium;::494::829::
+696;Load Value Injection;Low;::1342::
+697;DHCP Spoofing;Low;::923::
+698;Install Malicious Extension;Medium;::507::829::
+699;Eavesdropping on a Monitor;Medium;::1300::
+700;Network Boundary Bridging;Medium;
+701;Browser in the Middle (BiTM);Medium;::294::345::
+702;Exploiting Incorrect Chaining or Granularity of Hardware Debug Components;Low;::1296::
